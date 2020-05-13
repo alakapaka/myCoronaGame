@@ -123,7 +123,7 @@ export default class Corona {
     }
 
     randomSpot() {
-        if (this.counter % this.apRand === 0 && !this.shown) {
+        if (this.counter % this.apRand === 0 && !this.shown || this. counter % 120 === 0) {
             this.randomX = this.position.startX / 3 + Math.floor(Math.random() * (this.position.startX / 3));
             this.position.x = this.randomX;
             this.position.y = 0;
