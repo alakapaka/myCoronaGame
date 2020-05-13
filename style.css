@@ -2,12 +2,20 @@
     border-style:solid ;
     border-width: 3px;
     border-color: black;
-    /* width: 800px;     */
-    /* height: 600px;     */
+    align-content: center;
+    flex-grow: 1;
 }
 
 .image {
     display: none;
+}
+
+.spacer{
+    flex-grow: 1
+}
+.game {
+    display: flex;
+    flex-direction: row;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
