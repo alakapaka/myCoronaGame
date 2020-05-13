@@ -10,6 +10,7 @@ const GAME_HEIGHT = 600;
 let game = new Game(GAME_WIDTH, GAME_HEIGHT);
 
 game.start()
+game.bgMusic.play()
 let lastTime = 0;
 function gameLoop(timeStamp) {
 
