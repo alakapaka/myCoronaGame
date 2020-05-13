@@ -1,0 +1,13 @@
+#gameScreen {
+    border-style:solid ;
+    border-width: 3px;
+    border-color: black;
+    /* width: 800px;     */
+    /* height: 600px;     */
+}
+
+.image {
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
