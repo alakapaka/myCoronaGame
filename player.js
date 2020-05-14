@@ -62,7 +62,7 @@ export default class Player {
                         this.game.score.txtCon = `GAME OVER    `;
                         this.game.score.counter = "";
                         this.game.score.position.x = 87;
-                        if (this.game.score.position.y < 400 && this.counter <= 400) {
+                        if (this.game.score.position.y < 400 && this.counter <= 300) {
                             this.game.score.again = "Press enter to play again"
                             this.game.score.position.y++;
                             if (this.game.score.position.y >= 400) this.game.score.position.y -= 10;

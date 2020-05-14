@@ -96,7 +96,7 @@ export default class Corona {
 
     makeCorona(deltaTime) {
         if (this.shown) {
-            this.position.y += this.frameSpeed / deltaTime
+            this.position.y += this.frameSpeed / deltaTime *1.7
             if (this.position.x > this.position.midX) {
                 if (!this.started) {
                     this.started = true

@@ -4,21 +4,24 @@ export default class InputHandler {
         document.addEventListener("keydown", evnet => {
             switch (event.keyCode) {
                 case 37:
-                player.moveLeft()
-                break; 
+                    if(!player.killed)
+                    player.moveLeft()
+                    break;
                 case 38:
-                player.moveUp();
-                break; 
+                    if(!player.killed)
+                    player.moveUp();
+                    break;
                 case 39:
+                    if(!player.killed)
                     player.moveRight();
-                break; 
+                    break;
                 case 13:
-                    if(player.killed){
+                    if (player.killed) {
                         player.newGame();
                         break;
                     }
                     break;
-             
+
             }
         });
     }

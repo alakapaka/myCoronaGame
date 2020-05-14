@@ -5,7 +5,7 @@ export default class Score {
         this.alive = true;
         this.gameWidth = game.gameWidth;
         this.gameHeight = game.gameHeight;
-        this.counter = 1;
+        this.counter = 0;
         this.speedFactor = this.counter/1000000;
         this.width = 80;
         this.height = 50;
@@ -35,6 +35,7 @@ export default class Score {
         
     }
     update(deltaTime) {
+        if(this.counter === 0) this.game.bgMusic.play()
         if (!deltaTime) return
         this.counter +=  0.1 / 1
         this.speedFactor = this.counter * 0.01
@@ -50,7 +51,6 @@ export default class Score {
         }
         
         if(this.counter < 0) this.alive = false
-        // console.log(this.counter)
 
     }
 
